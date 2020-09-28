@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <!-- <link type="text/css" rel="stylesheet" href="site-plan.css" /> -->
+    <!-- reinistate above line when publishing -->
+    <!-- Delete below style section when publishing  lines 11 - 196 -->
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:700|Muli&display=swap");
+
+        :root {
+            --primary-color: #C5DBDB;
+            --secondary-color: #f7f9f9;
+            --accent1-color: #c9c5cb;
+            --accent2-color: #cadbc0;
+            --accent3-color: #9f84bd;
+
+            --heading-font: "merriweather sans";
+            --paragraph-font: "muli";
+
+            --headline-color-on-white: black;
+            --headline-color-on-color: #FFFFFF;
+            --paragraph-color-on-white: black;
+            --paragraph-color-on-color: black;
+            --text-background-color: #C5DBDB;
+            --nav-link-color: #F7F9F9;
+            --nav-background-color: #9f84bd;
+            --nav-hover-link-color: black;
+            --nav-hover-background-color: #cadbc0;
+        }
+
+        html {
+            background-color: var(--primary-color);
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 1em;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--heading-font);
+            color: var(--headline-color-on-white);
+        }
+
+        header {
+            padding: 1em;
+            text-align: center;
+            color: var(--paragraph-color-on-color);
+            background-color: var(--text-background-color);
+        }
+
+        header>h1,
+        header>h2 {
+            color: var(--headline-color-on-color);
+        }
+
+        p {
+            font-family: var(--paragraph-font);
+            color: var(--paragraph-color);
+            padding: 1em;
+        }
+
+        .colors {
+            width: 100%;
+            min-width: 350px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .colors th {
+            background-color: #999;
+        }
+
+        .colors td {
+            width: 25%;
+            height: 3em;
+        }
+
+        .primary {
+            background-color: var(--primary-color);
+        }
+
+        .secondary {
+            background-color: var(--secondary-color);
+        }
+
+        .accent1 {
+            background-color: var(--accent1-color);
+        }
+
+        .accent2 {
+            background-color: var(--accent2-color);
+        }
+
+        .accent3 {
+            background-color: var(--accent3-color);
+        }
+
+        p.colored {
+            background-color: var(--text-background-color);
+            color: var(--paragraph-color-on-color);
+        }
+
+        nav {
+            background-color: var(--nav-background-color);
+            line-height: 3em;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        nav>ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav a {
+            padding: 1em;
+            min-width: 70px;
+        }
+
+        nav a:link,
+        nav a:visited {
+            color: var(--nav-link-color);
+        }
+
+        nav a:hover {
+            color: var(--nav-hover-link-color);
+            background-color: var(--nav-hover-background-color);
+        }
+
+        .sitemap {
+            display: grid;
+            justify-content: center;
+
+            grid-template-columns: repeat(6, 15%);
+            grid-template-rows: 3em 1.5em 1.5em 3em;
+            grid-template-areas:
+                ". . home home . ."
+                ". . . top . ."
+                ". left left right right ."
+                "page2 page2 . . page3 page3";
+        }
+
+        .sitemap>div {
+            text-align: center;
+        }
+
+        .sm-home {
+            grid-area: home;
+            background-color: #999;
+            line-height: 3em;
+        }
+
+        .sm-page2 {
+            grid-area: page2;
+            background-color: #999;
+            line-height: 3em;
+        }
+
+        .sm-page3 {
+            grid-area: page3;
+            background-color: #999;
+            line-height: 3em;
+        }
+
+        .top {
+            grid-area: top;
+            border-left: 1px solid;
+        }
+
+        .left {
+            grid-area: left;
+            border-top: 1px solid;
+            border-left: 1px solid;
+        }
+
+        .right {
+            grid-area: right;
+            border-top: 1px solid;
+            border-right: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>OT Site Plan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site-plan.html">Site Plan</a></li>
+                <li><a href="new-patients.html">New Patients</a></li>
+                <li><a href="team-directory.html">Team Directory</a></li>
+            </ul>
+        </nav>
+        <!--
+      <h2>Benjamin Vredenburg</h2>
+      <h2>WDD 130.01</h2> -->
+    </header>
+    <main>
+        <h2>Overview</h2>
+        <hr />
+        <h3>Purpose</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+            risus et odio volutpat molestie. Maecenas dapibus est augue, ac volutpat
+            est gravida eget. Sed dolor orci, gravida semper nulla non, iaculis
+            tincidunt quam. Aenean non consequat justo. Nunc et ante tortor. Vivamus
+            vel posuere diam. Donec eu consequat libero. Aenean mattis enim a libero
+            dignissim varius. Sed tortor dolor, hendrerit eu dapibus lobortis,
+            ornare ac odio. Nulla hendrerit placerat ante, eu mattis nunc interdum
+            id. Donec nec iaculis ipsum. Curabitur vestibulum magna mauris, a
+            venenatis velit pellentesque nec. In suscipit, tellus nec efficitur
+            ultricies, nulla ex congue nibh, ut venenatis velit dui non urna. Sed
+            quis mi sollicitudin lorem scelerisque tristique.
+        </p>
+
+        <h3>Audience</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+            risus et odio volutpat molestie. Maecenas dapibus est augue, ac volutpat
+            est gravida eget. Sed dolor orci, gravida semper nulla non, iaculis
+            tincidunt quam. Aenean non consequat justo. Nunc et ante tortor. Vivamus
+            vel posuere diam. Donec eu consequat libero. Aenean mattis enim a libero
+            dignissim varius. Sed tortor dolor, hendrerit eu dapibus lobortis,
+            ornare ac odio. Nulla hendrerit placerat ante, eu mattis nunc interdum
+            id. Donec nec iaculis ipsum. Curabitur vestibulum magna mauris, a
+            venenatis velit pellentesque nec. In suscipit, tellus nec efficitur
+            ultricies, nulla ex congue nibh, ut venenatis velit dui non urna. Sed
+            quis mi sollicitudin lorem scelerisque tristique.
+        </p>
+
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <img src="https://cdn.glitch.com/2873788f-e81d-4489-bf57-f5c937b64fc9%2Fgenerations.png?v=1582829153126"
+            alt="Logo image" width="940" />
+        <hr />
+        <h2>
+            Style Guide
+        </h2>
+
+        <h3>
+            Color Palette
+        </h3>
+        <p>
+            Palette URL:
+            <a href="https://coolors.co/C5DBDB-f7f9f9-c9c5cb-cadbc0-9f84bd"
+                target="_blank">https://coolors.co/C5DBDB-f7f9f9-c9c5cb-cadbc0-9f84bd</a>
+        </p>
+
+        <table class="colors">
+            <tr>
+                <th>Primary</th>
+                <th>Secondary</th>
+                <th>Accent 1</th>
+                <th>Accent 2</th>
+                <th>Accent 3</th>
+            </tr>
+            <tr>
+                <td class="primary">[#C5DBDB]</td>
+                <td class="secondary">[#f7f9f9]</td>
+                <td class="accent1">[#c9c5cb]</td>
+                <td class="accent2">[#cadbc0]</td>
+                <td class="accent3">[#9f84bd]</td>
+            </tr>
+        </table>
+
+        <h3>
+            Typography
+        </h3>
+
+        <h4>
+            Heading Font: Merriweather-Sans
+        </h4>
+        <h4>
+            Paragraph Font: Muli
+        </h4>
+        <h4>
+            Normal paragraph example
+        </h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+            risus et odio volutpat molestie. Maecenas dapibus est augue, ac volutpat
+            est gravida eget. Sed dolor orci, gravida semper nulla non, iaculis
+            tincidunt quam. Aenean non consequat justo. Nunc et ante tortor. Vivamus
+            vel posuere diam. Donec eu consequat libero. Aenean mattis enim a libero
+            dignissim varius. Sed tortor dolor, hendrerit eu dapibus lobortis,
+            ornare ac odio. Nulla hendrerit placerat ante, eu mattis nunc interdum
+            id. Donec nec iaculis ipsum. Curabitur vestibulum magna mauris, a
+            venenatis velit pellentesque nec. In suscipit, tellus nec efficitur
+            ultricies, nulla ex congue nibh, ut venenatis velit dui non urna. Sed
+            quis mi sollicitudin lorem scelerisque tristique.
+        </p>
+        <h4>
+            Colored paragraph example
+        </h4>
+        <p class="colored">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
+            risus et odio volutpat molestie. Maecenas dapibus est augue, ac volutpat
+            est gravida eget. Sed dolor orci, gravida semper nulla non, iaculis
+            tincidunt quam. Aenean non consequat justo. Nunc et ante tortor. Vivamus
+            vel posuere diam. Donec eu consequat libero. Aenean mattis enim a libero
+            dignissim varius. Sed tortor dolor, hendrerit eu dapibus lobortis,
+            ornare ac odio. Nulla hendrerit placerat ante, eu mattis nunc interdum
+            id. Donec nec iaculis ipsum. Curabitur vestibulum magna mauris, a
+            venenatis velit pellentesque nec. In suscipit, tellus nec efficitur
+            ultricies, nulla ex congue nibh, ut venenatis velit dui non urna. Sed
+            quis mi sollicitudin lorem scelerisque tristique.
+        </p>
+        <h3>
+            Navigation
+        </h3>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Patients</a></li>
+                <li><a href="#">Staff</a></li>
+            </ul>
+        </nav>
+        <hr />
+        <h2>
+            Site Map
+        </h2>
+        <div class="sitemap">
+            <div class="sm-home">
+                Home
+            </div>
+            <div class="sm-page2">
+                New Patients
+            </div>
+            <div class="sm-page3">
+                Staff
+            </div>
+
+            <div class="top">
+                &nbsp;
+            </div>
+            <div class="left">
+                &nbsp;
+            </div>
+            <div class="right">
+                &nbsp;
+            </div>
+        </div>
+        <hr />
+        <h2>
+            Wireframes
+        </h2>
+        <h2>Home Page</h2>
+        <img src="https://cdn.glitch.com/2873788f-e81d-4489-bf57-f5c937b64fc9%2FHome%20Page%20Wireframe.PNG?v=1582827499570"
+            alt="home page wireframe" />
+        <h2>New Patient Form</h2>
+        <img src="https://cdn.glitch.com/2873788f-e81d-4489-bf57-f5c937b64fc9%2FNew%20Patient%20Form%20Wireframe.PNG?v=1582827502561"
+            alt="New Patients page wireframe" />
+        <h2>Team Directory</h2>
+        <img src="https://cdn.glitch.com/2873788f-e81d-4489-bf57-f5c937b64fc9%2FTeam%20Directory%20Wireframe.PNG?v=1582827506090"
+            alt="Staff page wireframe" />
+    </main>
+</body>
+
+</html>
